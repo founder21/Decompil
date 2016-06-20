@@ -14,13 +14,13 @@ import java.awt.geom.Rectangle2D;
 
 public class ShapeFactory {
     public Shape shape;
-    public BasicStroke stroke = new BasicStroke(3.0f);
+    public BasicStroke stroke = new BasicStroke(7.0f);
     public Paint paint;
     public int width = 25;
     public int height = 25;
 
     public ShapeFactory(int shape_type) {
-        switch (shape_type / 10) {
+        switch (shape_type / 20) {
             case 1: {
                 this.shape = ShapeFactory.createStar(3, new Point(0, 0), (double)this.width / 2.0, (double)this.width / 2.0);
                 break;
